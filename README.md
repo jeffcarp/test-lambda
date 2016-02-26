@@ -1,6 +1,6 @@
 # `test-lambda`
 
-AWS Lambda is really cool, but you know what's also cool? Tests. This is a module for unit testing Lambda functions. It should work with Mocha, Jasmine, Tape, or whatever test framework you use.
+[AWS Lambda](https://aws.amazon.com/lambda/) is really cool, but you know what's also cool? Tests. This is a module for unit testing Lambda functions. It should work with Mocha, Jasmine, Tape, or whatever test framework you use.
 
 > :rotating_light: **Status:** OK for basic tests. Also attempts to mock `dynamodb-doc` but it's not a complete feature.
 
