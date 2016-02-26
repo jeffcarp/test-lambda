@@ -19,3 +19,8 @@ it('returns something', function (done) {
 })
 ```
 
+# Install
+
+```bash
+npm install test-lambda
+```
