@@ -1,6 +1,6 @@
 # `test-lambda`
 
-AWS Lambda is really cool, but you know what's also cool? A well tested app. Writing your code as a Lambda function is convenient because it makes things easy to test.
+AWS Lambda is really cool, but you know what's also cool? Tests. Fortunately, Lambda functions are easy to test.
 
 ```js
 var assert = require('assert')
