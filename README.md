@@ -1,6 +1,6 @@
 # `test-lambda`
 
-AWS Lambda is really cool, but you know what's also cool? Tests. Fortunately, Lambda functions are easy to test.
+AWS Lambda is really cool, but you know what's also cool? Tests. This is a module for unit testing Lambda functions. It should work with Mocha, Jasmine, Tape, or whatever test framework you use.
 
 ```js
 var assert = require('assert')
