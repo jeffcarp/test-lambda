@@ -10,5 +10,20 @@
   "license": "ISC",
   "dependencies": {
     "proxyquire": "^1.7.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffcarp/test-lambda.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "test",
+    "mock"
+  ],
+  "bugs": {
+    "url": "https://github.com/jeffcarp/test-lambda/issues"
+  },
+  "homepage": "https://github.com/jeffcarp/test-lambda#readme"
 }
