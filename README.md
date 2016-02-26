@@ -15,9 +15,7 @@ it('returns something', function (done) {
     operation: 'get',
     id: 'an-id',
   }, function (status, data) {
-
-    assert(status === 'succeed')    
-
+    assert(status === 'succeed')
     done()
   })
 })
