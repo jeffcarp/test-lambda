@@ -6,12 +6,10 @@ AWS Lambda is really cool, but you know what's also cool? Tests. This is a modul
 
 ```js
 var assert = require('assert')
-var tl = require('test-lambda')
-
-var testLambda = tl.test(path.resolve('./path/to/your/lambda/index.js'))
+var testMyLambda = require('test-lambda').test(path.resolve('./path/to/your/lambda/index.js'))
 
 it('returns something', function (done) {
-  testLambda({
+  testMyLambda({
     operation: 'get',
     id: 'an-id',
   }, function (status, data) {
