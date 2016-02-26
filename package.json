@@ -1,0 +1,14 @@
+{
+  "name": "test-lambda",
+  "version": "1.0.0",
+  "description": "Unit test AWS Lambda functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Carpenter <gcarpenterv@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "proxyquire": "^1.7.4"
+  }
+}
