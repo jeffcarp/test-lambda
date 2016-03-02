@@ -1,6 +1,6 @@
 {
   "name": "test-lambda",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Unit test AWS Lambda functions",
   "main": "index.js",
   "scripts": {
