@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var dynamoDoc = function () {}
 var store = {}
@@ -7,7 +7,7 @@ dynamoDoc.prototype.Condition = function (attr, operation, value) {
   return {
     attr: attr,
     operation: operation,
-    value: value,
+    value: value
   }
 }
 
@@ -15,15 +15,15 @@ dynamoDoc.prototype.scan = function (params, callback) {
   if (!params.TableName) return callback('No TableName param')
   if (!store[params.TableName]) return callback('Table not found')
 
-  let allOfEm = Object.keys(store[params.TableName]).map(key => {
-    return store[params.TableName][key]  
+  let allOfEm = Object.keys(store[params.TableName]).map((key) => {
+    return store[params.TableName][key]
   })
 
   if (params.ScanFilter) {
     if (params.ScanFilter.operation === 'CONTAINS') {
       allOfEm = allOfEm.filter((item) => {
         return item[params.ScanFilter.attr].indexOf(params.ScanFilter.value) !== -1
-      }) 
+      })
     }
   }
 
@@ -56,31 +56,30 @@ dynamoDoc.prototype.deleteItem = function (params, callback) {
   if (!store[params.TableName]) return callback('Table not found.')
 
   delete store[params.TableName][params.Key.id]
-  callback(null, null);
-};
+  callback(null, null)
+}
 
-
-function _get(table, id) {
+function _get (table, id) {
   store[table] = store[table] || {}
-  return store[table][id];
+  return store[table][id]
 };
 
-function _getAll(table) {
-  return Object.keys(store[table]).map(key => {
-    return store[table][key]  
+function _getAll (table) {
+  return Object.keys(store[table]).map((key) => {
+    return store[table][key]
   })
 }
 
-function _set(table, item) {
+function _set (table, item) {
   store[table] = store[table] || {}
   store[table][item.id] = item
 }
 
-function _clear() {
+function _clear () {
   store = {}
 }
 
-function _store() {
+function _store () {
   return store
 }
 
@@ -90,5 +89,5 @@ module.exports = {
   _get: _get,
   _getAll: _getAll,
   _clear: _clear,
-  _store: _store,
-};
+  _store: _store
+}

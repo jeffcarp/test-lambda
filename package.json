@@ -4,14 +4,17 @@
   "description": "Unit test AWS Lambda functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && tape test/**/*-test.js"
   },
   "author": "Jeff Carpenter <gcarpenterv@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "proxyquire": "^1.7.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^6.0.7",
+    "tape": "^4.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeffcarp/test-lambda.git"
